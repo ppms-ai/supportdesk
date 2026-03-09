@@ -1,0 +1,13 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(echo \"y\" | npm create vite@latest . -- --template react 2>&1)",
+      "Bash(printf \"y\\\\n\" | npx create-vite@latest . --template react 2>&1)",
+      "Bash(npm install 2>&1)",
+      "Bash(npm run build 2>&1)",
+      "Bash(npm run dev 2>&1)",
+      "Bash(npx supabase login 2>&1)"
+    ]
+  },
+  "enableAllProjectMcpServers": false
+}

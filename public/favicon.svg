@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
+  <!-- Warm gold rounded background -->
+  <rect width="32" height="32" rx="8" fill="#C9A87C"/>
+  <!-- White chat bubble -->
+  <path d="M6 8h20a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H12.5L7 26v-4H6a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2z" fill="white"/>
+  <!-- Gold lines suggesting text/message -->
+  <rect x="10" y="13" width="12" height="1.5" rx="0.75" fill="#C9A87C"/>
+  <rect x="10" y="16.5" width="8" height="1.5" rx="0.75" fill="#C9A87C"/>
+</svg>
