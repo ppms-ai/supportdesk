@@ -117,18 +117,29 @@ export default function CreateWorkspace() {
           </form>
         </div>
 
-        <p className="text-center text-sm text-[#6B6B6B]">
-          Wrong account?{' '}
-          <button
-            className="font-medium text-[#6B6B6B] hover:text-[#2C2C2C] underline underline-offset-2"
-            onClick={async () => {
-              await supabase.auth.signOut()
-              navigate('/login')
-            }}
-          >
-            Sign out
-          </button>
-        </p>
+        <div className="flex flex-col items-center gap-2">
+  <p className="text-center text-sm text-[#6B6B6B]">
+    Wrong account?{' '}
+    <button
+      className="font-medium text-[#6B6B6B] hover:text-[#2C2C2C] underline underline-offset-2"
+      onClick={async () => {
+        await supabase.auth.signOut()
+        navigate('/login')
+      }}
+    >
+      Sign out
+    </button>
+  </p>
+  <p className="text-center text-sm text-[#6B6B6B]">
+    Already have an account?{' '}
+    <button
+      className="font-medium text-[#C9A87C] hover:text-[#b8966a] underline underline-offset-2"
+      onClick={() => navigate('/login')}
+    >
+      Log in
+    </button>
+  </p>
+</div>
       </div>
     </div>
   )
