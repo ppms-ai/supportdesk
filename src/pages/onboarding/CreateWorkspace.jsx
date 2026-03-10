@@ -134,7 +134,10 @@ export default function CreateWorkspace() {
     Already have an account?{' '}
     <button
       className="font-medium text-[#C9A87C] hover:text-[#b8966a] underline underline-offset-2"
-      onClick={() => navigate('/login')}
+      onClick={async () => {
+        await supabase.auth.signOut()
+        navigate('/login')
+      }}
     >
       Log in
     </button>
