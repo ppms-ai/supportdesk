@@ -47,10 +47,10 @@ export default function Login() {
       subtitle="Sign in to your SupportDesk account"
       footer={
         <>
-          Don&apos;t have an account?{' '}
-          <Link to="/register" className="font-medium text-brand-600 hover:text-brand-700">
-            Create one free
-          </Link>
+          Need an account?{' '}
+          <a href="mailto:calie@pivotandpros.com" className="font-medium text-brand-600 hover:text-brand-700">
+            Contact us
+          </a>
         </>
       }
     >
