@@ -48,7 +48,7 @@ export default function Login() {
       footer={
         <>
           Need an account?{' '}
-          <a href="mailto:calie@pivotandpros.com" className="font-medium text-brand-600 hover:text-brand-700">
+          <a href="mailto:calie@pivotandprospermarketing.com" className="font-medium text-brand-600 hover:text-brand-700">
             Contact us
           </a>
         </>
