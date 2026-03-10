@@ -25,8 +25,9 @@ export function AuthProvider({ children }) {
   useEffect(() => {
     // Safety net: if onAuthStateChange never fires (e.g. storage lock stall),
     // force loading to false after 3 seconds so the app doesn't hang forever.
-    const fallbackTimer = setTimeout(() => {
-      console.log('[AuthContext] 3s fallback triggered — onAuthStateChange did not fire. Forcing loading to false.')
+const fallbackTimer = setTimeout(() => {
+      setUser(null)
+      setWorkspace(null)
       setLoading(false)
     }, 3000)
 
